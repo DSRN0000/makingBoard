@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script th:inline="javascript">
+<!--alert : 자바스크립트에서 화면에 창을 띄워주는 함수-->
+<!--location.replace 페이지를 이동시켜준다.-->
+
+  /*<![COATA[*/
+
+  var message = [[${message}]];
+  alert(message);
+
+  location.replace([[${searchUrl}]]);
+
+  /*]]>*/
+</script>
+<body>
+
+</body>
+</html>
